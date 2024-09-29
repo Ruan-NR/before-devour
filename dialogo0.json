@@ -1,0 +1,15 @@
+[
+    {"Nome":"Yuri", "Emoção": "normal", "Texto": "cara, você acha que isso realmente vai dar certo?"},
+    {"Nome":"Miguel", "Emoção": "smile", "Texto": "essa é a esperança de trazer os dinossauros de volta a vida"},
+    {"Nome":"Miguel", "Emoção": "smile",  "Texto": "por uma máquina do tempo.."},
+    {"Nome":"Yuri", "Emoção": "smile", "Texto": "Eu sonhei com um dinossauro de bike"},
+    {"Nome":"Miguel", "Emoção": "normal",  "Texto": "Para, agora não é hora de brincar."},
+    {"Nome":"Yuri", "Emoção": "normal", "Texto": "Ah, sei não, a gente nunca testou isso antes"},
+    {"Nome":"Yuri", "Emoção": "normal", "Texto": "e a gente nem tem tanto dinheiro, tá tudo caindo aos pedaços"},
+    {"Nome":"Miguel", "Emoção": "smile", "Texto": "escuta.. se isso der certo a gente vai ficar RICO, MUITO RICO, do dia pra noite!"},
+    {"Nome":"Miguel", "Emoção": "normal", "Texto": "o máximo que pode acontecer é uma pequena.."},
+    {"Nome":"Miguel", "Emoção": "medo", "Texto": "..Distorção da Realidade"},
+    {"Nome":"Miguel", "Emoção": "normal", "Texto": "e se algo quebrar é só seguir essa ordem de montagem na lousa"},
+    {"Nome":"Miguel", "Emoção": "normal", "Texto": "você sabe oque fazer."},
+    {"Nome":"Yuri", "Emoção": "smile", "Texto": "ah pô, tranquilo então, bora ligar!"}
+]

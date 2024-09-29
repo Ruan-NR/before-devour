@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/2d_lights_and_shadows_neutral_point_light.webp" type="Texture" id=1]
+[ext_resource path="res://assets/scenario/machine.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 15, 17.5 )
+
+[node name="Soda" type="StaticBody2D"]
+position = Vector2( 726, -411 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -0.5 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="Light2D" type="Light2D" parent="."]
+texture = ExtResource( 1 )
+texture_scale = 0.3
+color = Color( 0.231373, 0.282353, 1, 1 )
+energy = 0.8
+__meta__ = {
+"_editor_description_": ""
+}

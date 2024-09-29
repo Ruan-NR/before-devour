@@ -1,0 +1,68 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://sounds/bip.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/carinha/carinha1.png" type="Texture" id=2]
+[ext_resource path="res://assets/carinha/carinha6.png" type="Texture" id=3]
+[ext_resource path="res://assets/carinha/carinha3.png" type="Texture" id=4]
+[ext_resource path="res://assets/carinha/carinha4.png" type="Texture" id=5]
+[ext_resource path="res://assets/carinha/carinha2.png" type="Texture" id=6]
+[ext_resource path="res://assets/carinha/carinha5.png" type="Texture" id=7]
+[ext_resource path="res://scenes/blim.gd" type="Script" id=8]
+
+[sub_resource type="AnimatedTexture" id=1]
+frames = 6
+oneshot = true
+fps = 8.0
+frame_0/texture = ExtResource( 2 )
+frame_1/texture = ExtResource( 6 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 4 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 5 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 7 )
+frame_4/delay_sec = 0.0
+frame_5/texture = ExtResource( 3 )
+frame_5/delay_sec = 0.0
+
+[sub_resource type="Animation" id=2]
+resource_name = "default"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 105, 47 ), Vector2( 105, 450 ) ]
+}
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 256.0
+margin_bottom = 150.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 105.0
+margin_top = 184.868
+margin_right = 240.0
+margin_bottom = 344.869
+rect_scale = Vector2( 0.3, 0.3 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource( 1 )
+script = ExtResource( 8 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "default"
+anims/default = SubResource( 2 )
+
+[node name="Bip" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )

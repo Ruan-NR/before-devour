@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/font.tres" type="DynamicFont" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 256.0
+margin_bottom = 150.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 4.0
+margin_top = 36.0
+margin_right = 252.0
+margin_bottom = 101.0
+custom_fonts/font = ExtResource( 1 )
+text = "VOCÊ GANHOU!
+
+Você conseguiu arrumar a máquina do tempo e voltar
+para o passado com sucesso, parabéns!"
+align = 1
